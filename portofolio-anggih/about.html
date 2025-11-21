@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Anggih Az-zahroh</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Pink Aesthetic -->
+  <style>
+    :root{
+      --pink: #F7C9D4;
+      --pink-light: #FDEDEF;
+      --pink-dark: #EFB6C8;
+      --text: #4d4d4d;
+      --radius: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      background: white;
+      color: var(--text);
+    }
+
+    .navbar{
+      border-bottom: 2px solid var(--pink-light);
+      background: white !important;
+    }
+
+    .navbar-brand{
+      color: var(--pink-dark) !important;
+      font-weight: 600;
+    }
+
+    .nav-link.active{
+      color: var(--pink-dark) !important;
+      font-weight: 600;
+    }
+
+    .section-title{
+      color: var(--pink-dark);
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .about-card{
+      background: var(--pink-light);
+      padding: 25px;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--pink);
+      box-shadow: 0 6px 14px rgba(247, 201, 212, 0.35);
+    }
+
+    .skill-box{
+      background: white;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--pink);
+      padding: 12px 18px;
+      text-align: center;
+      font-weight: 500;
+      transition: 0.2s;
+      box-shadow: 0 4px 10px rgba(247, 201, 212, 0.2);
+    }
+
+    .skill-box:hover{
+      background: var(--pink);
+      border-color: var(--pink-dark);
+      color: white;
+    }
+
+    footer{
+      background: var(--pink-light);
+      padding: 15px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Anggih Az-zahroh</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="section-title">Tentang Saya</h2>
+
+      <div class="about-card mb-4">
+        <p>
+          Halo! Saya <strong>Anggih Az-zahroh</strong> Saya adalah mahasiswa di jurusan Komputerisasi Akuntansi yang bersemangat untuk menggabungkan ketelitian akuntansi dengan kecanggihan teknologi.
+        </p>
+
+        <p>Saat ini, saya fokus mendalami bagaimana sistem terkomputerisasi dapat membantu menciptakan proses pencatatan keuangan yang akurat, cepat, dan terstruktur. Saya bersemangat untuk menerapkan prinsip Akurasi Data, Sistem Efisien, dan menghasilkan Laporan Tepat Waktu dalam proyek nyata.</p>
+      </div>
+
+      <h4 class="mb-3" style="color: var(--pink-dark);">Keahlian Saya</h4>
+
+      <div class="row g-3 mt-2">
+        <div class="col-md-4"><div class="skill-box">HTML</div></div>
+        <div class="col-md-4"><div class="skill-box">CSS</div></div>
+        <div class="col-md-4"><div class="skill-box">Pengolahan Data Excel</div></div>
+        <div class="col-md-4"><div class="skill-box">Aplikasi Akuntansi</div></div>
+        <div class="col-md-4"><div class="skill-box">Microsoft Word</div></div>
+        <div class="col-md-4"><div class="skill-box">CorelDraw</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <small>© <span id="year"></span> Anggih Az-zahroh</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
